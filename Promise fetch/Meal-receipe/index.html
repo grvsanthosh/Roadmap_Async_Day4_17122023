@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"
+      defer
+    ></script>
+    <script src="script.js" defer></script>
+    <style>
+      table,
+      tr,
+      td,
+      th {
+        border: 1px black solid;
+        border-collapse: collapse;
+      }
+      .table-container {
+        position: relative;
+        top: 100px;
+        left: 50px;
+      }
+
+      .button-container {
+        position: relative;
+        top: 300px;
+        left: 50px;
+      }
+      td {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="button-container" onclick="getProduct()">NEXT</button>
+    <table class="table-container">
+      <caption>
+        <b>This table will display food receipe with youtube video link.</b>
+      </caption>
+      <thead>
+        <tr>
+          <th>Meal name</th>
+          <th>Youtube Link Address</th>
+        </tr>
+      </thead>
+      <tbody class="tbody-text"></tbody>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"
+      defer
+    ></script>
+    <script src="script.js" defer></script>
+    <style>
+      #form-container {
+        position: relative;
+        top: 100px;
+        left: 50px;
+      }
+
+      .container-style {
+        font-size: medium;
+        font-weight: bold;
+      }
+
+      #image-container {
+        position: relative;
+        top: 200px;
+        left: 50px;
+      }
+
+      #imagevalue {
+        object-fit: contain;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="form-container">
+      <div>
+        <p class="container-style">
+          Please select the HTTP status code form the drop down to dispaly the
+          gif meme corresponding to selected status code.
+        </p>
+        <label class="container-style" for="statuscode"
+          >HTTP status code:</label
+        >
+        <select class="container-style" name="statuscode" id="statuscode">
+          <option class="container-style" value="">Select</option>
+          <option class="container-style" value="100">Continue</option>
+          <option class="container-style" value="101">
+            Switching protocol
+          </option>
+          <option class="container-style" value="200">OK</option>
+          <option class="container-style" value="201">Created</option>
+          <option class="container-style" value="206">Partial content</option>
+          <option class="container-style" value="301">Moved permanently</option>
+          <option class="container-style" value="302">Found</option>
+          <option class="container-style" value="307">
+            Temporarily redirected
+          </option>
+          <option class="container-style" value="400">Bad request</option>
+          <option class="container-style" value="401">Unauthorized</option>
+          <option class="container-style" value="402">Payment required</option>
+          <option class="container-style" value="403">Forbidden</option>
+          <option class="container-style" value="404">Not found</option>
+          <option class="container-style" value="405">
+            Method not allowed
+          </option>
+          <option class="container-style" value="406">Not acceptable</option>
+          <option class="container-style" value="408">Request timeout</option>
+          <option class="container-style" value="409">Conflict</option>
+          <option class="container-style" value="410">Gone</option>
+          <option class="container-style" value="411">Length required</option>
+          <option class="container-style" value="412">
+            Precondition failed
+          </option>
+          <option class="container-style" value="417">
+            Expectation failed
+          </option>
+          <option class="container-style" value="421">Misdirect request</option>
+          <option class="container-style" value="422">
+            Unprocessibly entity
+          </option>
+          <option class="container-style" value="423">Locked</option>
+          <option class="container-style" value="424">Failed dependency</option>
+          <option class="container-style" value="499">
+            client closed reques
+          </option>
+          <option class="container-style" value="500">
+            Internal server error
+          </option>
+          <option class="container-style" value="502">Bad gateway</option>
+          <option class="container-style" value="506">
+            Variant also negotiates
+          </option>
+          <option class="container-style" value="508">Loop detected</option>
+        </select>
+        <button id="button">SUBMIT</button>
+      </div>
+    </form>
+  </body>
+</html>
